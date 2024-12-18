@@ -1,0 +1,274 @@
+/* Style général */
+body {
+    font-family: "inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Mise en page des sections */
+section {
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+/* Alignement du contenu */
+.content-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* Boutons */
+button, .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+button:hover, .button:hover {
+    background-color: #45a049;
+}
+
+section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+section:nth-child(even) {
+    background-color: #e4e4e4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p, ul, form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+
+/* Animation d'accueil */
+#welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    transform: translateY(-100%); /* Position initiale hors de l'écran */
+    transition: transform 1s ease-in-out; /* Animation fluide */
+}
+
+/* Titre */
+#welcome-screen h1 {
+    font-size: 3rem;
+    text-align: center;
+    opacity: 0; /* Le texte commence invisible */
+    animation: fadeInText 1s ease-in-out forwards 0.5s; /* Apparition progressive */
+}
+
+/* Animation du texte */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Disparition de l'écran après l'animation */
+body.loaded #welcome-screen {
+    transform: translateY(-100%); /* Fait glisser l'écran vers le haut */
+    pointer-events: none;
+    transition: transform 1s ease-in-out 2s; /* Déclenche la disparition après l'animation */
+}
+
+
+/* Section d'accueil */
+#welcome-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vidéo en arrière-plan */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre la vidéo */
+    min-width: 100%;  /* Assure que la largeur est toujours suffisante */
+    min-height: 100%; /* Assure que la hauteur est suffisante */
+    width: 100%;      /* S'adapte à la largeur de l'écran */
+    height: 100%;     /* S'adapte à la hauteur de l'écran */
+    z-index: 0;      /* La vidéo reste en arrière-plan */
+    object-fit: cover; /* Maintient un zoom et ajuste l'image pour couvrir toute la surface */
+    filter: brightness(50%); /* Légère réduction de la luminosité pour la lisibilité du texte */
+}
+
+/* Désactivation du défilement horizontal */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Empêche le défilement horizontal */
+}
+
+/* Pour assurer la réactivité de la page */
+@media screen and (max-width: 768px) {
+    #background-video {
+        object-fit: cover; /* Maintient le même comportement en cas de petite taille d'écran */
+    }
+}
+
+/* Boîte de texte avec animation */
+.welcome-text-box {
+    z-index: 1;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* Animation après chargement */
+body.loaded .welcome-text-box {
+    opacity: 1; /* Rend la boîte visible */
+    transform: translateY(0); /* Glissement vers la position finale */
+}
+
+.welcome-text-box h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.welcome-text-box p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-nav a, .footer-socials a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover, .footer-socials a:hover {
+    text-decoration: underline;
+}
