@@ -64,3 +64,12 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
     observer.observe(section);
 });
+
+function toggleEducationDetails(id) {
+    const details = document.getElementById(id);
+    if (details.style.display === "block") {
+        details.style.display = "none";
+    } else {
+        details.style.display = "block";
+    }
+}
