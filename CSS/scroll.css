@@ -1,0 +1,48 @@
+/* Flèche pour scroller vers le bas */
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    font-size: 2rem;
+    color: #1ed3ca;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -10px);
+    }
+}
+
+/* Bouton pour remonter en haut */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #1ed3ca;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex; /* Caché par défaut */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #13968e;
+    transform: scale(1.1);
+}

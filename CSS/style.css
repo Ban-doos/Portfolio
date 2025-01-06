@@ -136,7 +136,6 @@ footer {
     color: white;
 }
 
-
 /* Animation d'accueil */
 #welcome-screen {
     position: fixed;
@@ -180,7 +179,6 @@ body.loaded #welcome-screen {
     pointer-events: none;
     transition: transform 1s ease-in-out 2s; /* Déclenche la disparition après l'animation */
 }
-
 
 /* Section d'accueil */
 #welcome-section {
@@ -271,4 +269,449 @@ footer {
 
 .footer-nav a:hover, .footer-socials a:hover {
     text-decoration: underline;
+}
+
+/* Style pour les sections */
+.section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff; /* Fond blanc par défaut */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    opacity: 0; /* Commence invisible */
+    transition: opacity 1s ease, transform 1s ease; /* Animation */
+}
+
+.section-active {
+    opacity: 1;
+    transform: translateY(0); /* Apparition progressive */
+}
+
+/* Contenu aligné */
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Colonnes pour le contenu */
+.left-column,
+.right-column {
+    flex: 1 1 45%; /* Prend 45% de l'espace disponible */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Images */
+.content-box img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* La catastrophe */
+.content-box2 img{
+    max-width: 100%;
+    height: 100px !important;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Listes */
+.content-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-box ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Boutons */
+.button {
+    background-color: #1ed3ca;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #13968e;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column,
+    .right-column {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.article {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article a {
+    text-decoration: none;
+    color: #333;
+}
+
+.article a:hover {
+    color: #1ed3ca;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mindmap-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.details-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Frise Chronologique */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #1ed3ca;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.timeline-item:nth-child(odd) {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.timeline-item .timeline-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item .timeline-content img {
+    width: 110px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.timeline-item .timeline-content h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.timeline-item .timeline-content .date {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.timeline-item .timeline-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-item .timeline-content ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Détails cachés */
+.timeline-item .details {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Bouton */
+.timeline-item .toggle-details {
+    background-color: #1ed3ca;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-item .toggle-details:hover {
+    background-color: #13968e;
+}
+
+/* Point de la frise */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #1ed3ca;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+
+
+
+/* el carrousel */
+/* Section BTS SIO */
+.bts-description {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bts-description h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.bts-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #1ed3ca;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+}
+
+/* Carrousel des logos */
+.company-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    animation: scroll 10s linear infinite;
+}
+
+.carousel img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.2);
+}
+
+/* Animation de défilement en boucle */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Section Education */
+.education-section {
+    padding: 40px;
+}
+
+.education-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Frise Chronologique */
+.education-timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #1ed3ca;
+    transform: translateX(-50%);
+}
+
+.education-timeline-item {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-timeline-item:nth-child(odd) {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.education-timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.education-timeline-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.education-timeline-item p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Détails */
+.education-details {
+    display: initial;
+    margin-top: 15px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-details ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: disc inside;
+}
+
+.education-details a.education-button {
+    display: inline-block;
+    margin-top: 10px;
+    background: #1ed3ca;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.education-details a.education-button:hover {
+    background: #13968e;
+}
+
+/* Point de la frise */
+.education-timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #1ed3ca;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
