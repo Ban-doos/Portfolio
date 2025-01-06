@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/navbar.css">
+        <link rel="stylesheet" href="CSS/slider.css">
+        <link rel="stylesheet" href="CSS/scroll.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+    <nav>
+    <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen' ></i>
+        <span class="logo navLogo"><a href="index.php">#Esteban</a></span>
+        <div class="menu">
+            <div class="logo-toggle">
+                <span class="logo"><a href="index.php">#Esteban</a></span>
+                <i class='bx bx-x siderbarClose'></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#welcome-section">Accueil</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#parcours-scolaire">Parcours Scolaire</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#bts-sio">BTS SIO</a></li>
+                <li><a href="#experience-professionnelle">Expérience Professionnelle</a></li>
+                <li><a href="#veille-technologique">Veille Technologique</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+            <div class="dark-light">
+                <i class='bx bx-moon moon'></i>
+                <i class='bx bx-sun sun'></i>
+            </div>
+
+            <div class="searchBox">
+                <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                </div>
+
+                <div class="search-field">
+                    <input type="text" placeholder="Recherche...">
+                    <i class='bx bx-search'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    
+<div class="bar-space">
+        <div id="welcome-screen">
+            <h1>Welcome</h1>
+        </div>
+
+        <!-- Sections -->
+        <section id="welcome-section">
+            <video autoplay muted loop playsinline id="background-video">
+                <source src="Images/video/home-video-3.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas les vidéos HTML5.
+            </video>
+            <div class="welcome-text-box">
+                <h1>TEIXEIRA MACEDO Esteban</h1>
+                <h3>Bienvenue sur mon Portfolio</h3>
+                <p>Découvrez mes projets, compétences et expériences.</p>
+            </div>
+        </section>
+
+        <!-- Flèche pour scroller vers le bas -->
+        <!--<div id="scroll-down-arrow" class="scroll-indicator">
+            <span>&#8595;</span>
+        </div>-->
+
+        <!-- Bouton pour remonter en haut -->
+        <!--<button id="scroll-to-top" class="scroll-to-top" title="Remonter en haut">
+            &#8593;
+        </button>-->
+
+
+        <!-- Profil -->
+        <section id="profil">
+            <h2 class="section-title">Profil</h2>
+            <div class="content-box">
+                <p>
+                    <strong>Je suis Esteban TEIXEIRA MACEDO</strong>, un développeur full stack actuellement en formation 
+                    <strong>BTS SIO (Services Informatiques aux Organisations) option SLAM</strong>. Passionné par la 
+                    <strong>technologie</strong> et l'<strong>innovation</strong>, je m'engage à créer des solutions logicielles performantes et adaptées aux besoins des utilisateurs.
+                </p>
+                <p>
+                    En dehors du développement, j'aime pratiquer divers hobbies qui stimulent ma créativité et ma réflexion, comme le 
+                    <strong>crossfit</strong>, le <strong>cinéma</strong>, les <strong>jeux vidéo</strong>, les <strong>échecs</strong>, 
+                    et la <strong>musique</strong>.
+                </p>
+                <h3>Compétences</h3>
+                <ul class="skills-list">
+                    <li>Développement front-end : <br />HTML, CSS, JavaScript</li>
+                    <li>Développement back-end : <br />PHP, Python, C#</li>
+                    <li>Gestion de bases de données : <br />MySQL, SQL Server</li>
+                    <li>Frameworks : <br />Laravel, Entity Framework</li>
+                    <li>Outils : <br />Git, Visual Studio, Figma</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Parcours Scolaire -->
+        <section id="parcours-scolaire">
+            <h2 class="section-title">Parcours Scolaire</h2>
+            <div class="content-box left-align education-timeline">
+                <!-- Étape BAC PRO SN -->
+                <div class="education-timeline-item"> <!-- dans la class : onclick="toggleEducationDetails('bac-sn-details')" -->
+                    <div class="education-details" id="bac-sn-details">
+                        <h3>Septembre 2020 - Juin 2023</h3>
+                        <p>BAC PRO Systèmes Numériques (SN)</p>
+                    
+                        <p><strong>Compétences acquises :</strong></p>
+                        <ul>
+                            <li>Réalisation et maintenance de produits électroniques.</li>
+                            <li>Initiation à la cybersécurité et aux réseaux.</li>
+                            <li>Préparation à divers métiers comme technicien en télécommunications ou en cybersécurité.</li>
+                        </ul>
+                        <p>
+                            Actuellement renommé BAC PRO CIEL : Cybersécurité, Informatique et Réseaux, Électronique.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Étape BTS SIO -->
+                <div class="education-timeline-item"> <!-- dans la class : onclick="toggleEducationDetails('bts-sio-details')" -->
+                    <div class="education-details" id="bts-sio-details">
+                        <h3>Septembre 2023 - Aujourd'hui</h3>
+                        <p>BTS SIO - Option SLAM</p>
+                        <p><strong>Spécialisations :</strong></p>
+                        <ul>
+                            <li>Développement d’applications avec HTML, CSS, JavaScript, PHP, etc.</li>
+                            <li>Analyse des besoins clients et conception de solutions adaptées.</li>
+                            <li>Maintenance et évolution d’applications logicielles.</li>
+                        </ul>
+                        <p>
+                            Débouchés : développeur web, analyste programmeur, ou chargé d’études informatiques.
+                        </p>
+                    </div>
+                </div>
+                <a href="images/CV ESTEBAN (6).pdf" download class="button">Télécharger mon CV</a>
+                <button onclick="window.location.href='https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers'">
+                    En savoir plus sur le BTS SIO
+                </button>
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section id="projets">
+            <h2 class="section-title">Projets</h2>
+            <div class="content-box left-align">
+                En Création !!!
+                <ul>
+                    <li><strong>Projet en entreprise 1</strong> : Description du projet.</li>
+                    <li><strong>Projet personnel 1</strong> : Description du projet.</li>
+                    <li><strong>Projet en entreprise 2</strong> : Description du projet.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Présentation du BTS SIO -->
+        <section id="bts-sio">
+            <h2 class="section-title">Le BTS SIO</h2>
+            <div class="content-box">
+                <!-- Présentation du BTS SIO -->
+                <div class="bts-description">
+                    <h3>Brevet de Technicien Supérieur en Services Informatiques aux Organisations</h3>
+                    <p>
+                        Le <strong>BTS SIO</strong> en option <strong>SLAM</strong> est une formation en deux ans 
+                        dédiée au développement de solutions logicielles et d’applications métiers. Les étudiants y apprennent à maîtriser :
+                    </p>
+                    <ul class="skills-list">
+                        <li>C#</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                    </ul>
+                    <p>
+                        Cette formation professionnalisante peut être effectuée en apprentissage. Elle permet une insertion 
+                        professionnelle directe ou la poursuite d'études en <strong>licence</strong>, en <strong>école d'ingénieurs</strong>, 
+                        ou en <strong>Master</strong>.
+                    </p>
+                </div>
+
+                <!-- Carrousel des technologies -->
+                <div class="slider">
+                    <div class="slide-track right" id="slide-track">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expérience Professionnelle -->
+        <section id="experience-professionnelle">
+            <h2 class="section-title">Expérience Professionnelle</h2>
+            <div class="timeline">
+                <!-- Étape 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="images/M_H.png" alt="Macon Habitat">
+                        <h3>MÂCON HABITAT</h3>
+                        <p class="date">14 Juin 2021 - 2 Juillet 2021</p>
+                        <button class="toggle-details">Voir plus</button>
+                        <div class="details">
+                            <p><u>Technicien d'assistance informatique</u></p>
+                            <ul>
+                                <li>Intervention sur des infrastructures réseaux.</li>
+                                <li>Automatisation de l'installation des postes sur le réseau.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Étape 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="images/xefi.png" alt="XEFI">
+                        <h3>XEFI</h3>
+                        <p class="date">15 Novembre 2021 - 17 Décembre 2021 / 16 Mai 2022 - 17 Juin 2022</p>
+                        <button class="toggle-details">Voir plus</button>
+                        <div class="details">
+                            <p>
+                                <u>Technicien Réseaux et Hardware</u>
+                                <ul>
+                                    <li>- Transfère des accès pare-feu, serveur</li>
+                                    <li>- Réparation des postes des clients</li>
+                                    <li>- Préparation des postes des clients</li>
+                                    <li>- Intervention des postes des clients</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Étape 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="images/doc_info.png" alt="Doc_Informatik">
+                        <h3>DOC-INFORMATIK</h3>
+                        <p class="date">15 Novembre 2022 - 10 Décembre 2022</p>
+                        <button class="toggle-details">Voir plus</button>
+                        <div class="details">
+                            <p>
+                                <u>Technicien Hardware</u>
+                                <ul>
+                                    <li> - Prise en charge des clients</li>
+                                    <li>- Réparation des postes des clients</li>
+                                    <li> - Intervention chez les clients</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Étape 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="images/siclik.png" alt="siclik">
+                        <h3>Siclik</h3>
+                        <p class="date">20 Mai 2024 - 28 Juin 2024</p>
+                        <button class="toggle-details">Voir plus</button>
+                        <div class="details">
+                            <p>
+                                <u>Développeur Web</u>
+                                <ul>
+                                    <li>- Création d’un site pour l’entreprise et publication.</li>
+                                    <li>- Intervention sur des projets clients</li>
+                                    <li>- Site fait sous php, JavaScript et html</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajoutez d'autres étapes ici -->
+            </div>
+        </section>
+
+        <!-- Veille Technologique -->
+        <section id="veille-technologique">
+            <h2 class="section-title">Veille Technologique</h2>
+            <div class="content-box">
+                <!-- Articles -->
+                Plus d'informations prochainements !!
+                <div class="articles-container">
+                    <article class="article">
+                        <a href="https://example.com/article1" target="_blank">
+                            <h3>Article 1</h3>
+                            <p>Résumé de l'article ou point clé de la veille.</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a href="https://example.com/article2" target="_blank">
+                            <h3>Article 2</h3>
+                            <p>Résumé de l'article ou point clé de la veille.</p>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Carte mentale -->
+                <div class="mindmap-container">
+                    <h3>Carte Mentale</h3>
+                    <img src="images/mindmap-example.jpg" alt="Carte mentale de la veille" />
+                </div>
+
+                <!-- Détails de la veille -->
+                <div class="details-container">
+                    <h3>Détails de la Veille</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo
+                        cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac
+                        facilisis in, egestas eget quam.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire de Contact -->
+        <section id="contact">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="content-box left-align">
+                <form action="contact-form.php" method="POST">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message :</label><br>
+                    <textarea id="message" name="message" required></textarea><br><br>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </div>    
+
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/scroll.js"></script>
+<!-- Footer -->
+<footer>
+            <div class="footer-nav">
+                <a href="#profil">Profil</a> | 
+                <a href="#parcours-scolaire">Parcours Scolaire</a> | 
+                <a href="#projets">Projets</a> | 
+                <a href="#experience-professionnelle">Expérience</a> | 
+                <a href="#veille-technologique">Veille</a> | 
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2024 Teixeira Macedo Esteban. Tous droits réservés.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/monprofil" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/monprofil" target="_blank">LinkedIn</a>
+            </div>
+        </footer>
+    </body>
+</html>
