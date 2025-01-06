@@ -6,6 +6,8 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="CSS/navbar.css">
+        <link rel="stylesheet" href="CSS/slider.css">
+        <link rel="stylesheet" href="CSS/scroll.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>

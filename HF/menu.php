@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="search-field">
-                    <input type="text" placeholder="Search...">
+                    <input type="text" placeholder="Recherche...">
                     <i class='bx bx-search'></i>
                 </div>
             </div>
