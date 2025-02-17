@@ -49,6 +49,7 @@ section {
     margin-right: 0px;
     margin-bottom: 20px;
     margin-left: 0px;
+    scroll-margin-top: 10vh;
 }
 
 /* Alignement du contenu */
@@ -236,6 +237,7 @@ h2 {
     color: #333;
     text-decoration: underline;
     margin-bottom: 20px;
+    margin: 0 10%;
 }
 
 /* Animation après chargement */
