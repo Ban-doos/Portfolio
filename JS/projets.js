@@ -36,7 +36,7 @@ function getIdFromURL() {
 document.addEventListener("DOMContentLoaded", () => {
     const projetId = getIdFromURL();
 
-    fetch("data/projets.json")
+    fetch("https://ban-doos.github.io/Portfolio/DATA/projets.json")
         .then(response => response.json())
         .then(projets => {
             const projet = projets.find(p => p.id === projetId);
