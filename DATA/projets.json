@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "titre": "Site Vitrine pour Siclik",
+        "contexte": "Projet réalisé en entreprise pour un client souhaitant une vitrine moderne.",
+        "techs": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "taches": ["Conception de la maquette", "Développement front-end", "Intégration PHP"]
+    },
+    {
+        "id": 2,
+        "titre": "DriveUmacteix – Application Drive en Laravel",
+        "contexte": "Projet de gestion de commandes et de produits pour un service de drive. Inspiré des systèmes de click & collect. Utilisation de relations entre produits, commandes, clients, etc.",
+        "techs": ["Laravel", "PHP", "MySQL", "HTML", "CSS"],
+        "taches": [
+          "Création des tables et relations (produits, commandes, clients, magasins)",
+          "Mise en place de formulaires d’ajout et modification",
+          "Affichage dynamique des commandes avec filtres",
+          "Gestion des relations many-to-many (commandes-produits)"
+        ]
+    },
+    {
+        "id": 3,
+        "titre": "U Drive – Backoffice de gestion en C#",
+        "contexte": "Application en C# pour la gestion complète des magasins drive (clients, commandes, produits). Déployée dans un contexte de centralisation de données SQL Server.",
+        "techs": ["C#", ".NET", "Entity Framework", "SQL Server"],
+        "taches": [
+          "Développement de l’interface graphique (WinForms ou WPF)",
+          "Connexion à une base centralisée",
+          "Système de Panier avec : Ajout, suppression, modification de produit",
+          "Historique des commandes / Création de commandes enregistré dans la base de donnée"
+        ]
+    },
+    {
+        "id": 4,
+        "titre": "Camping – Application PHP sécurisée avec PDO",
+        "contexte": "Site internet frontoffice permettant aux clients de consulter les informations diffusées par le camping sur Internet.",
+        "techs": ["PHP", "MySQL", "HTML/CSS"],
+        "taches": [
+          "Création de formulaires de réservation et client",
+          "Connexion sécurisée à la base via PDO",
+          "Prévention des injections SQL",
+          "Affichage conditionnel des informations"
+        ]
+    },
+    {
+        "id": 5,
+        "titre": "Camping – Application en C#",
+        "contexte": "Application bureautique de gestion d’un camping (clients, réservations, emplacements) utilisant MySQL.",
+        "techs": ["C#", "Entity Framework", "MySQL", ".NET"],
+        "taches": [
+          "Modélisation de la base de données",
+          "CRUD complet des entités principales",
+          "Gestion des relations (clients ↔ réservations)",
+          "Interface graphique simple et fonctionnelle"
+        ]
+    }
+]

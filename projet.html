@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="page-title">Projet</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/navbar.css">
+        <link rel="stylesheet" href="CSS/slider.css">
+        <link rel="stylesheet" href="CSS/scroll.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="index.html">#Esteban</a></span>
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="index.html">#Esteban</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+
+                    <ul class="nav-links">
+                    </ul>
+                </div>
+
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+
+                    <div class="searchBox">
+                        <div class="searchToggle">
+                            <i class='bx bx-x cancel'></i>
+                            <i class='bx bx-search search'></i>
+                        </div>
+
+                        <div class="search-field">
+                            <input type="text" placeholder="Recherche...">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="bar-space">
+            <div id="welcome-screen">
+                <h1>Welcome</h1>
+            </div>
+
+            <!-- Sections -->
+            <section id="welcome-section">
+                <video autoplay muted loop playsinline id="background-video">
+                    <source src="Images/video/home-video-3.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas les vidéos HTML5.
+                </video>
+                <div class="welcome-text-box">
+                    <h1>TEIXEIRA MACEDO Esteban</h1>
+                    <h3>Bienvenue sur mon Portfolio</h3>
+                    <p>Découvrez mes projets, compétences et expériences.</p>
+                </div>
+            </section>
+
+            <main>
+                <h1 id="projet-titre"></h1>
+                <section>
+                    <h2>Contexte</h2>
+                    <p id="projet-contexte"></p>
+                </section>
+                <section>
+                    <h2>Technologies utilisées</h2>
+                    <ul id="projet-techs"></ul>
+                </section>
+                <section>
+                    <h2>Tâches réalisées</h2>
+                    <ul id="projet-taches"></ul>
+                </section>
+            </main>
+        
+
+        <script src="JS/main.js"></script>
+        <script src="JS/script.js"></script>
+        <script src="JS/timeline.js"></script>
+        <script src="JS/slider.js"></script>
+        <script src="JS/scroll.js"></script>
+        <script src="JS/projets.js"></script>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-nav">
+                <a href="#profil">Profil</a> | 
+                <a href="#parcours-scolaire">Parcours Scolaire</a> | 
+                <a href="#projets">Projets</a> | 
+                <a href="#experience-professionnelle">Expérience</a> | 
+                <a href="#veille-technologique">Veille</a> | 
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2025 Teixeira Macedo Esteban. Tous droits réservés.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/monprofil" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/monprofil" target="_blank">LinkedIn</a>
+            </div>
+        </footer>
+    </body>
+</html>
