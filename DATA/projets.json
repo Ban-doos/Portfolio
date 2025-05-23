@@ -1,57 +1,118 @@
 [
-    {
-        "id": 1,
-        "titre": "Site Vitrine pour Siclik",
-        "contexte": "Projet réalisé en entreprise pour un client souhaitant une vitrine moderne.",
-        "techs": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        "taches": ["Conception de la maquette", "Développement front-end", "Intégration PHP"]
-    },
-    {
-        "id": 2,
-        "titre": "DriveUmacteix – Application Drive en Laravel",
-        "contexte": "Projet de gestion de commandes et de produits pour un service de drive. Inspiré des systèmes de click & collect. Utilisation de relations entre produits, commandes, clients, etc.",
-        "techs": ["Laravel", "PHP", "MySQL", "HTML", "CSS"],
-        "taches": [
-          "Création des tables et relations (produits, commandes, clients, magasins)",
-          "Mise en place de formulaires d’ajout et modification",
-          "Affichage dynamique des commandes avec filtres",
-          "Gestion des relations many-to-many (commandes-produits)"
-        ]
-    },
-    {
-        "id": 3,
-        "titre": "U Drive – Backoffice de gestion en C#",
-        "contexte": "Application en C# pour la gestion complète des magasins drive (clients, commandes, produits). Déployée dans un contexte de centralisation de données SQL Server.",
-        "techs": ["C#", ".NET", "Entity Framework", "SQL Server"],
-        "taches": [
-          "Développement de l’interface graphique (WinForms ou WPF)",
-          "Connexion à une base centralisée",
-          "Système de Panier avec : Ajout, suppression, modification de produit",
-          "Historique des commandes / Création de commandes enregistré dans la base de donnée"
-        ]
-    },
-    {
-        "id": 4,
-        "titre": "Camping – Application PHP sécurisée avec PDO",
-        "contexte": "Site internet frontoffice permettant aux clients de consulter les informations diffusées par le camping sur Internet.",
-        "techs": ["PHP", "MySQL", "HTML/CSS"],
-        "taches": [
-          "Création de formulaires de réservation et client",
-          "Connexion sécurisée à la base via PDO",
-          "Prévention des injections SQL",
-          "Affichage conditionnel des informations"
-        ]
-    },
-    {
-        "id": 5,
-        "titre": "Camping – Application en C#",
-        "contexte": "Application bureautique de gestion d’un camping (clients, réservations, emplacements) utilisant MySQL.",
-        "techs": ["C#", "Entity Framework", "MySQL", ".NET"],
-        "taches": [
-          "Modélisation de la base de données",
-          "CRUD complet des entités principales",
-          "Gestion des relations (clients ↔ réservations)",
-          "Interface graphique simple et fonctionnelle"
-        ]
-    }
+  {
+    "id": 1,
+    "image": "Images/siclik.png",
+    "titre": "Site Vitrine pour Siclik",
+    "contexte": "Projet réalisé en entreprise pour un client souhaitant une vitrine moderne pour présenter son activité. Ce projet a permis d'approfondir la conception responsive, le SEO de base, et le déploiement en ligne. Le site comprend des sections dynamiques, un formulaire de contact sécurisé et une base MySQL pour la gestion du contenu.",
+    "techs": ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "WampServer", "Git", "SEO"],
+    "taches": [
+      "Conception de la maquette sur Figma",
+      "Développement front-end responsive",
+      "Intégration dynamique en PHP",
+      "Sécurisation des formulaires avec filtres PHP",
+      "Déploiement local et distant avec GitHub Pages et FileZilla"
+    ],
+    "captures": [
+      "images/projets/udrive_capture1.png",
+      "images/projets/udrive_capture2.png",
+      "images/projets/udrive_capture3.png"
+    ],
+    "lien": "Images/projets/compte_rendu_MOUZETEIXEIRAMACEDO_camping_du_dragon_phase_1.pdf"
+  },
+  {
+    "id": 2,
+    "image": "Images/assets/Laravel.svg.png",
+    "titre": "DriveUmacteix – Application Drive en Laravel",
+    "contexte": "Application Laravel simulant un drive pour magasins avec gestion complète des produits, clients, commandes, et retraits. Projet utilisé pour manipuler les relations entre modèles Laravel (One-to-Many, Many-to-Many), les formulaires sécurisés avec validation, et la gestion des rôles utilisateurs.",
+    "techs": ["Laravel", "PHP", "MySQL", "HTML", "CSS", "Composer", "Blade", "MVC"],
+    "taches": [
+      "Création de migrations et de seeders",
+      "Mise en place de relations entre modèles (produit ↔ commande)",
+      "Formulaires d’ajout, modification et suppression avec validation",
+      "Affichage dynamique filtré par date, statut de préparation ou livraison",
+      "Gestion des sessions, des erreurs et du token CSRF"
+    ],
+    "captures": [
+      "images/projets/udrive_capture1.png",
+      "images/projets/udrive_capture2.png",
+      "images/projets/udrive_capture3.png"
+    ],
+    "lien": "Images/projets/compte_rendu_MOUZETEIXEIRAMACEDO_camping_du_dragon_phase_1.pdf"
+  },
+  {
+    "id": 3,
+    "image": "Images/assets/entity.png",
+    "titre": "U Drive – Backoffice de gestion en C#",
+    "contexte": "Application backoffice en WinForms pour la gestion des données centralisées d’un drive (produits, clients, commandes). Ce projet a permis d’approfondir les modèles en Entity Framework, les requêtes LINQ, la validation côté client et le respect des contraintes d’intégrité en base.",
+    "techs": ["C#", ".NET", "Entity Framework", "SQL Server", "LINQ", "WinForms"],
+    "taches": [
+      "Développement de l’interface en WinForms avec gestion d'événements",
+      "Connexion sécurisée à SQL Server via EF",
+      "Système de panier dynamique avec calculs automatiques",
+      "Création de vues filtrées (commandes en attente, historiques...)",
+      "Gestion des utilisateurs avec restrictions selon les rôles"
+    ],
+    "captures": [
+      "images/projets/udrive_capture1.png",
+      "images/projets/udrive_capture2.png",
+      "images/projets/udrive_capture3.png"
+    ],
+    "lien": "Images/projets/compte_rendu_MOUZETEIXEIRAMACEDO_camping_du_dragon_phase_1.pdf"
+  },
+  {
+    "id": 4,
+    "image": "Images/assets/php.png",
+    "titre": "Camping – Application PHP sécurisée avec PDO",
+    "contexte": "Site web permettant à des clients de consulter les offres d’un camping. Conçu dans un objectif de sécurité et de bonnes pratiques (séparation des fichiers, PDO, vérifications serveur), le projet inclut des réservations simulées et la gestion d’un espace client.",
+    "techs": ["PHP", "MySQL", "HTML", "CSS", "PDO", "Sécurité Web"],
+    "taches": [
+      "Connexion PDO avec try/catch pour la gestion d’erreurs",
+      "Utilisation de requêtes préparées pour éviter les injections SQL",
+      "Création de formulaires conditionnels (client connecté ou non)",
+      "Mise en forme CSS simple et responsive",
+      "Organisation des scripts (config, modèles, contrôleurs)"
+    ],
+    "captures": [
+      "images/projets/udrive_capture1.png",
+      "images/projets/udrive_capture2.png",
+      "images/projets/udrive_capture3.png"
+    ],
+    "lien": "Images/projets/compte_rendu_site.pdf"
+  },
+  {
+    "id": 5,
+    "image": "Images/assets/cs.png",
+    "titre": "Camping – Application en C#",
+    "contexte": "Logiciel bureautique pour la gestion d’un camping avec une base MySQL, réalisé en WinForms. Ce projet a permis de modéliser une base complète avec relations, de gérer des interfaces utilisateurs et de mettre en œuvre une navigation simple dans une IHM fluide.",
+    "techs": ["C#", "Entity Framework", "MySQL", ".NET", "WinForms"],
+    "taches": [
+      "Création du modèle de données (clients, réservations, emplacements)",
+      "Implémentation du CRUD complet",
+      "Interface utilisateur fluide avec boutons contextuels",
+      "Ajout de contrôles de saisie et messages d’erreur",
+      "Connexion à une base distante avec gestion des erreurs"
+    ],
+    "captures": ["Images/image (1).png"],
+    "lien": "Images/projets/compte_rendu_MOUZETEIXEIRAMACEDO_camping_du_dragon_phase_1.pdf"
+  },
+  {
+    "id": 6,
+    "image": "Images/assets/ptitbamboo.png",
+    "titre": "Générateur de planning – Projet BAMBOO ÉDITION",
+    "contexte": "Feature de l’application interne de l’entreprise BAMBOO permettant de générer automatiquement un fichier Excel de planning de sortie pour les collections à paraître, en se basant sur une structure SQL et en appliquant des règles métiers spécifiques par maison d’édition.",
+    "techs": ["C#", "Entity Framework", "MySQL", "PhpSpreadsheet", ".NET"],
+    "taches": [
+      "Génération dynamique d’un tableau Excel par éditeur",
+      "Fusion de cellules et mise en forme avec styles conditionnels",
+      "Tri automatique par date de parution",
+      "Création d’un menu déroulant pour les éditions spéciales",
+      "Export au format XLSX avec nommage intelligent et sauvegarde réseau"
+    ],
+    "captures": [
+      "images/projets/udrive_capture1.png",
+      "images/projets/udrive_capture2.png",
+      "images/projets/udrive_capture3.png"
+    ],
+    "lien": "Images/projets/compte_rendu_MOUZETEIXEIRAMACEDO_camping_du_dragon_phase_1.pdf"
+  }
 ]

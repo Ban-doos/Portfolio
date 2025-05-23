@@ -36,7 +36,7 @@ function getIdFromURL() {
 document.addEventListener("DOMContentLoaded", () => {
     const projetId = getIdFromURL();
 
-    fetch("https://ban-doos.github.io/Portfolio/DATA/projets.json")
+    fetch("data/projets.json")
         .then(response => response.json())
         .then(projets => {
             const projet = projets.find(p => p.id === projetId);
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
+            document.getElementById("img-title").src = projet.image;
             document.getElementById("page-title").textContent = projet.titre;
             document.getElementById("projet-titre").textContent = projet.titre;
             document.getElementById("projet-contexte").textContent = projet.contexte;
@@ -62,6 +63,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 li.textContent = tache;
                 tacheList.appendChild(li);
             });
+
+            const capturesContainer = document.getElementById("captures-list");
+            projet.captures.forEach(capture => {
+                const img = document.createElement("img");
+                img.src = capture;
+                img.alt = "Capture du projet";
+                
+                img.addEventListener("click", function () {
+                    openPopup(this.src);
+                });
+                
+                capturesContainer.appendChild(img);
+            });
+
+            const lienProjet = document.getElementById("projet-lien");
+            lienProjet.href = projet.lien;
         })
         .catch(err => {
             console.error("Erreur chargement projet :", err);
@@ -108,3 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Erreur lors du chargement des projets :", err);
         });
 });*/
+
+function openPopup(src) {
+    document.getElementById("popup-img").src = src;
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}

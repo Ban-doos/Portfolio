@@ -22,6 +22,7 @@
                     </div>
 
                     <ul class="nav-links">
+                        <li><a href="#projet">Mode Projet</a></li>
                     </ul>
                 </div>
 
@@ -50,21 +51,13 @@
             <div id="welcome-screen">
                 <h1>Welcome</h1>
             </div>
-
-            <!-- Sections -->
-            <section id="welcome-section">
-                <video autoplay muted loop playsinline id="background-video">
-                    <source src="Images/video/home-video-3.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas les vidéos HTML5.
-                </video>
-                <div class="welcome-text-box">
-                    <h1>TEIXEIRA MACEDO Esteban</h1>
-                    <h3>Bienvenue sur mon Portfolio</h3>
-                    <p>Découvrez mes projets, compétences et expériences.</p>
-                </div>
-            </section>
-
+            
             <main>
+                <div class="page-center">
+                    <div class="image-container">
+                        <img id="img-title" src="" alt="">
+                    </div>
+                </div>
                 <h1 id="projet-titre"></h1>
                 <section>
                     <h2>Contexte</h2>
@@ -77,6 +70,15 @@
                 <section>
                     <h2>Tâches réalisées</h2>
                     <ul id="projet-taches"></ul>
+                </section>
+                <section>
+                    <div class="captures">
+                        <h3>Captures d'écran</h3>
+                        <div class="captures-list" id="captures-list"></div>
+                    </div>
+                    <div class="projet-link">
+                        <a id="projet-lien" href="" target="_blank" class="button">Voir le projet</a>
+                    </div>
                 </section>
             </main>
         
@@ -104,5 +106,9 @@
                 <a href="https://www.linkedin.com/in/monprofil" target="_blank">LinkedIn</a>
             </div>
         </footer>
+        <div id="popup" class="popup" onclick="closePopup()">
+            <span class="popup-close">&times;</span>
+            <img id="popup-img" class="popup-content">
+        </div>
     </body>
 </html>
